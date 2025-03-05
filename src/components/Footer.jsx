@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+
 
 const PageFooter = () => {
     return(
