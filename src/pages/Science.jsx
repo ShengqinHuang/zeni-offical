@@ -68,7 +68,7 @@ const Science = () => {
                     our blend includes organic wild yam,
                     goji berry and lion's mane mushroom.</SciencePfont>
                     <SciencePfont>— nothing more, nothing less.</SciencePfont>
-                <ScienceImage src="../../public/powder.avif" alt="this is a photo of powder"/>
+                <ScienceImage src="/powder.avif" alt="this is a photo of powder"/>
             </ScienceLeft>
             <ScienceRight>
                 <ScienceRightFont>
