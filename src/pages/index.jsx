@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import homepage from '../photos/homepage.avif';
-import samplebag from '../photos/samplebag.avif';
-import Navigation from '@/components/Navigation';
+
 
 const HomeContainer = styled.div`
     display: grid;
@@ -15,12 +13,15 @@ const HomeContainer = styled.div`
 const HomeLeft = styled.div`
     display: flex;
     flex-direction: column;
+    align-items: center;
 `;
 
 const HomeRight = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+    max-width: 100%;
 `;
 
 const HomeMiddle = styled.div`
@@ -28,14 +29,22 @@ const HomeMiddle = styled.div`
     justify-content: center;
     background-color: #4e4a42;
     padding: 10vw 5vw 8vw 5vw;
+    align-items: center;
 `;
 
 const HomeHfont = styled.h2`
     color: #4e4a42;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    font-size: calc(15px + 1.5vw);
 `;
-
+ 
 const HomePfont = styled.p`
      color: #4e4a42;
+     font-size: calc(10px + 1vw);
+     margin-left: 5vw;
+     margin-right: 5vw;
+     text-align: center;
 `;
 
 const MiddlePfont = styled.p`
@@ -46,19 +55,27 @@ const MiddlePfont = styled.p`
 
 const MiddleHfont = styled.h2`
     color: #ffffff;
+    font-size: calc(15px + 1.5vw);
     
 `;
 
 const HomeImage = styled.img`
-    width: 50vw;
+    width: 100%;
     height: auto;
-    overflow: hidden;
+    max-width: 45vw;
+    object-fit: contain;
+    display: block; 
+    margin: 0;
 `;
 
+
+
 const SampleImage = styled.img`
-    width: 60vw;
+    width: 50vw;
     height: auto;
-`;
+    display: block;
+    margin: 0 auto;
+`;  
 
 const Home = () => {
     return(
@@ -73,11 +90,11 @@ const Home = () => {
                 </HomePfont>
             </HomeLeft>
             <HomeRight>
-                <HomeImage src ={homepage} alt="This is the Home Page Photo"/>
+                <HomeImage src ="/homepage.avif" alt="This is the Home Page Photo"/>
             </HomeRight>
         </HomeContainer>
         <HomeMiddle>
-            <SampleImage src={samplebag} alt="This is a photo of a sample bag"/>
+            <SampleImage src="/samplebag.avif" alt="This is a photo of a sample bag"/>
             <MiddleHfont>A COMPLETE BONE BROTH for your gut</MiddleHfont>
             <MiddlePfont> We Believe in the Power of Food as Medicine</MiddlePfont>
             <MiddlePfont>The ancient tradition of combining animal bones with vegetables and herbs has deep roots in Eastern cultures, 

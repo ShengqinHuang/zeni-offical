@@ -1,13 +1,15 @@
+// src/components/Navigation.jsx
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 const Nav = styled.nav`
-  background: #282c34;
+  background: #4e4a42;
   padding: 1rem;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  top: 0;
+  position: sticky;
 `;
 
 const NavList = styled.ul`
@@ -21,10 +23,12 @@ const NavItem = styled.li`
   margin: 0 1rem;
 `;
 
-const NavLink = styled(Link)`
+const NavLink = styled.a`
   color: white;
   text-decoration: none;
   font-size: 1rem;
+  cursor: pointer;
+  float: center;
 
   &:hover {
     text-decoration: underline;
@@ -36,10 +40,14 @@ const Navigation = () => (
   <Nav>
     <NavList>
       <NavItem>
-        <NavLink to="/">Home</NavLink>
+        <Link href="/" passHref>
+          <NavLink>Home</NavLink>
+        </Link>
       </NavItem>
       <NavItem>
-        <NavLink to="/science">Science</NavLink>
+        <Link href="/science" passHref>
+          <NavLink>Science</NavLink>
+        </Link>
       </NavItem>
     </NavList>
   </Nav>
