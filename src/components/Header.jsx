@@ -12,10 +12,18 @@ const HeaderContainer = styled.div`
     margin: 0;
 `*/
 
+const HeaderLogo = styled.img`
+    width: 8vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-top: 0.5rem;
+`;
+
 const PageHeader = () => {
     return(
         <HeaderContainer>
-            <img src="./pubic/zeni-logo.png" alt="Zeni logo" />
+            <HeaderLogo src="/zeni-logo.avif" alt="Zeni logo" />
         </HeaderContainer>
     );
 };

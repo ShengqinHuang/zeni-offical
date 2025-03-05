@@ -8,8 +8,6 @@ const Nav = styled.nav`
   padding: 1rem;
   display: flex;
   justify-content: center;
-  top: 0;
-  position: sticky;
 `;
 
 const NavList = styled.ul`

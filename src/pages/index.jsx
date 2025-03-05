@@ -90,11 +90,11 @@ const Home = () => {
                 </HomePfont>
             </HomeLeft>
             <HomeRight>
-                <HomeImage src ="../../public/homepage.avif" alt="This is the Home Page Photo"/>
+                <HomeImage src = "/homepage.avif" alt="This is the Home Page Photo"/>
             </HomeRight>
         </HomeContainer>
         <HomeMiddle>
-            <SampleImage src="../../public/samplebag.avif" alt="This is a photo of a sample bag"/>
+            <SampleImage src="/samplebag.avif" alt="This is a photo of a sample bag"/>
             <MiddleHfont>A COMPLETE BONE BROTH for your gut</MiddleHfont>
             <MiddlePfont> We Believe in the Power of Food as Medicine</MiddlePfont>
             <MiddlePfont>The ancient tradition of combining animal bones with vegetables and herbs has deep roots in Eastern cultures, 
